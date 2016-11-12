@@ -3,6 +3,6 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: fangam@cn.ibm.com
+  name: testAmfang
   host: testAmfang
   disk_quota: 1024M
