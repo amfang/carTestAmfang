@@ -2,7 +2,7 @@ applications:
 - path: .
   memory: 256M
   instances: 1
-  domain: testAmfang.mybluemix.net
-  name: DriveCar
-  host: drivecar
+  domain: mybluemix.net
+  name: fangam@cn.ibm.com
+  host: testAmfang
   disk_quota: 1024M
