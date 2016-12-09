@@ -98,6 +98,7 @@
 
 			var hostName = window.location.host;
 			/*
+			//Local testing should be below connect of Socket
 			var socket = io.connect(hostName);
 
 			socket.on("message", function (data) {
@@ -105,7 +106,7 @@
 				// console.log(typeof(data));
 			});
 			*/
-			//连接websocket后端服务器
+			//连接websocket后端服务器-bluemix
 			this.socket = io.connect(hostName);
 			
 			//告诉服务器端有用户登录

@@ -51,6 +51,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
+// Local main files
 app.get('/', function(req, res){
 	res.send('<h1>Welcome Realtime Server</h1>');
 });
@@ -68,7 +69,7 @@ var app = express();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 
-// serve the files out of ./public as our main files
+// serve the files out of ./public as our main files - bluemix
 app.use(express.static(__dirname + "/public"));
 
 //在线用户
