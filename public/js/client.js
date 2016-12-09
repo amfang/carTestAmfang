@@ -95,9 +95,18 @@
 			d.getElementById("showusername").innerHTML = this.username;
 			//this.msgObj.style.minHeight = (this.screenheight - db.clientHeight + this.msgObj.clientHeight) + "px";
 			this.scrollToBottom();
-			
+
+			var hostName = window.location.host;
+			/*
+			var socket = io.connect(hostName);
+
+			socket.on("message", function (data) {
+				console.log("socket data: " + data);
+				// console.log(typeof(data));
+			});
+			*/
 			//连接websocket后端服务器
-			this.socket = io.connect('ws://realtime.plhwin.com');
+			this.socket = io.connect(hostName);
 			
 			//告诉服务器端有用户登录
 			this.socket.emit('login', {userid:this.userid, username:this.username});
